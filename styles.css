@@ -1,0 +1,71 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+body{
+        padding: 50px 425px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        font-family: "Open Sans", sans-serif;
+        background: #2b5876;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      section {
+        width: 1000px;
+        grid-column: 2;
+        box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
+        border-radius: 5px;
+        background-color: white;
+        overflow: hidden;
+      }
+      .headline{
+        grid-row: 1;
+      }
+      .headline, .main, footer {
+        padding: 10px 15px;
+        grid-column: 2;
+        display: block;
+        margin: auto;
+      }
+      .headline, footer{
+        text-align: center;
+      }
+      .main{
+        grid-row: 2;
+        text-align: left;
+      }
+      footer{
+          margin-top: 50px;
+          grid-row: 3;
+          background-color: white;
+          border-radius: 5px;
+          box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
+      }
+      img {
+        width: 250px;
+        margin: -100px 20px;
+        grid-row: 1/2;
+        border-radius: 5px;
+        box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
+        float: right;
+        width: 250px;
+      }
+
+      h1 {
+        font-family: "Merriweather", serif;
+        font-size: 32px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        color: #3B73CE;
+        font-family: 'Merriweather', serif;
+      }
+      a {
+        color: #32a852;
+        font-family: 'Merriweather', serif;
+      }
+      li {
+        color: #666464;
+        font-family: 'Merriweather', serif;  
+      }
