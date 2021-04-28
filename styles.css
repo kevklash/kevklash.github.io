@@ -2,30 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 body{
-        padding: 50px 425px;
-        align-items: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        padding: 50px;
         font-family: "Open Sans", sans-serif;
         background: #2b5876;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
-      section {
-        width: 1000px;
-        grid-column: 2;
-        box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
-        border-radius: 5px;
-        background-color: white;
-        overflow: hidden;
+      #content {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      .home-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+        z-index: -1;
       }
       .headline{
         grid-row: 1;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 42px -4px rgba(150,145,150,1);
+        z-index: 1;
       }
       .headline, .main, footer {
+        width: 1000px;
         padding: 10px 15px;
-        grid-column: 2;
+        grid-column: 3;
         display: block;
         margin: auto;
       }
@@ -35,22 +38,28 @@ body{
       .main{
         grid-row: 2;
         text-align: left;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 42px -4px rgba(150,145,150,1);
+        z-index: 2;
       }
       footer{
-          margin-top: 50px;
-          grid-row: 3;
-          background-color: white;
-          border-radius: 5px;
-          box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
+        grid-row: 3;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 42px -4px rgba(150,145,150,1);
+        z-index: 3;
       }
       img {
+        grid-row: 2;
+        grid-column: 4;
+        max-width: 250px;
         width: 250px;
-        margin: -100px 20px;
-        grid-row: 1/2;
+        margin: -100px -300px;
         border-radius: 5px;
         box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
-        float: right;
         width: 250px;
+        z-index: 4;
       }
 
       h1 {
