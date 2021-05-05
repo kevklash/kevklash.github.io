@@ -34,12 +34,12 @@ header, footer{
   text-align: center;
 }
 h1 {
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", serif;
   font-size: 32px;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #3B73CE;
-  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', serif;
 }
 a {
   color: #32a852;

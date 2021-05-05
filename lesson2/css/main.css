@@ -1,0 +1,62 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+body{
+  padding: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+    font-family: "Open Sans", serif;
+    font-size: 32px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #3B73CE;
+    font-family: 'Open Sans', serif;
+  }
+  a {
+    color: #32a852;
+    font-family: 'Merriweather', serif;
+  }
+  li {
+    color: #666464;
+    font-family: 'Merriweather', serif;  
+  }
+/* phone or baseline views **************************/
+main {
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+	border-radius: 5px;
+}
+
+main section h2 {
+	color: #536878;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
+}
+
+main section:nth-child(2) {
+	margin: 0.5rem;
+}
+
+.colimage {
+	box-shadow: 0 0 30px #333;
+}
+
+main section picture img {
+	width: 99%;
+	height: auto;
+}
