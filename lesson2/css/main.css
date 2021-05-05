@@ -21,16 +21,34 @@ h1 {
     color: #32a852;
     font-family: 'Merriweather', serif;
   }
+  a:visited {
+    color: #1f3e70;
+    font-family: 'Merriweather', serif;
+  }
   li {
     color: #666464;
     font-family: 'Merriweather', serif;  
   }
+
+  header, footer{
+    padding: 10px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #eee;
+    box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
+  }
+
 /* phone or baseline views **************************/
 main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 	max-width: 767px;
-	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
 	font-size: 0.8rem;
 	border-radius: 5px;
 }
