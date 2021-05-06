@@ -37,7 +37,6 @@ h1 {
     margin: 0 auto;
     border-radius: 5px;
     background-color: #eee;
-    box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
   }
 
 /* phone or baseline views **************************/
@@ -63,7 +62,6 @@ main section {
 	padding: 0 1rem;
 	background-color: #eee;
   border-radius: 5px;
-  box-shadow: 5px 10px 42px 2px rgba(150,145,150,1);
 }
 
 main section:nth-child(2) {
