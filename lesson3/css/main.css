@@ -1,0 +1,170 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=KoHo:wght@300&display=swap');
+body{
+  padding: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dae2f8, #d6a4a4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dae2f8, #d6a4a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 32px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #666699;
+    font-family: 'Abel', sans-serif;
+  }
+  a {
+    color: #32a852;
+    font-family: 'KoHo', sans-serif;
+  }
+  a:visited {
+    color: #d6a4a4;
+    font-family: 'KoHo', sans-serif;
+  }
+  li {
+    color: #666464;
+    font-family: 'KoHo', sans-serif;
+  }
+  p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 14px;
+    color: #2b5876;
+  }
+  hr{
+    color: #666699;
+  }
+
+  header, footer{
+    padding: 10px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+    
+  }
+
+/* phone or baseline views **************************/
+main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+	font-size: 0.8rem;
+	border-radius: 5px;
+}
+
+main .scheme {
+  margin-top: 1rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+	max-width: 800px;
+  justify-content: center;
+  justify-items: center;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	padding: 0 1rem;
+  border-radius: 5px;
+}
+
+/* Menu */
+nav {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  background: #666699;
+  text-align: center;
+}
+nav li a {
+  color: white;
+  display:block;
+  text-decoration: none;
+  padding: .5em 4em;
+}
+nav li a:hover {
+  background: tomato;
+  color: white;
+}
+
+/* End Menu */
+
+/* Color and Fonts Schemas */
+
+main .scheme .block, .typo_block{
+  margin-top: 0.5;
+  margin-bottom: 0.5rem;
+	max-width: 150px;
+  justify-content: center;
+  justify-items: center;
+	font-size: 0.8rem;
+	border-radius: 5px;
+	padding: 0 1rem;
+  border-radius: 5px;
+}
+
+main .scheme .block:nth-child(1){
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dae2f8, #d6a4a4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dae2f8, #d6a4a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main .scheme .block:nth-child(2){
+  background: #666699;
+}
+
+main .scheme .block:nth-child(3){
+  background: #d6a4a4;
+}
+
+main .scheme .block:nth-child(4){
+  background:tomato;
+}
+
+main .scheme .typo_block{
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dae2f8, #d6a4a4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dae2f8, #d6a4a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* End Color Schemas */
+
+main section h2 {
+	color: #666699;
+}
+
+main section {
+	margin: 0.5rem;
+	padding: 0 1rem;
+  border-radius: 5px;
+}
+
+.colimage {
+  margin: 20px 10%;
+}
+
+main section picture img {
+	width: 99%;
+	height: auto;
+}
+
+.persona{
+  border: 10px solid#2b5876;
+  box-shadow: 5px 5px 5px #999;
+  margin: 0 10px auto;
+  margin-bottom: 100px;
+  float: left;
+  width: 125px;
+}
