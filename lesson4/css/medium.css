@@ -1,0 +1,31 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1em;
+		justify-content: center;
+        justify-items: center;
+	}
+
+    main section{
+        width: 400px;
+    }
+
+	/* Menu	*/
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+    /* End Menu	*/
+}

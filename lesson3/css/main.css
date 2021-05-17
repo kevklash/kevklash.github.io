@@ -76,7 +76,7 @@ main .scheme {
 /* Menu */
 nav {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 838px;
   padding: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -149,6 +149,10 @@ main section {
 	margin: 0.5rem;
 	padding: 0 1rem;
   border-radius: 5px;
+}
+
+main section h2, p {
+  text-align: center;
 }
 
 .colimage {
