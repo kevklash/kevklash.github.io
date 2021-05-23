@@ -9,7 +9,7 @@ let add = () => {
   const li = document.createElement('li');
       li.innerHTML = `
       <b>${document.querySelector('#favchap').value}</b>
-      <a href="#" class="btn btn-danger btn-sm delete" >X</a>
+      <a href="#" class="btn-delete" >X</a>
       `;
   // Append the row to the list
   list.appendChild(li);
