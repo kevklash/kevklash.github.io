@@ -29,6 +29,7 @@ h1 {
     font-family: 'KoHo', sans-serif;
   }
   p {
+    padding-left: 10px;
     font-family: 'KoHo', sans-serif;
     font-size: 14px;
     color: #2b5876;
@@ -49,7 +50,7 @@ h1 {
     border-radius: 5px;
   }
   header, footer{
-    padding: 10px;
+    padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -58,7 +59,7 @@ h1 {
 
   }
 
-  header img {
+    header img {
     width: 80px;
     height: auto;
   }
@@ -92,6 +93,59 @@ main {
 	border-radius: 5px;
 }
 
+.info {
+  background-color: white;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+.info .text{
+  margin-top: 10%;
+}
+.info p{
+  text-align: center;
+  font-size: medium;
+}
+.social{
+  margin: 0 auto;
+  display: block;
+  padding-left: 35px;
+}
+.social img{
+  width: 32px;
+  margin: 3px;
+  margin-bottom: 50px;
+}
+.map{
+  display: none;
+}
+
+/* Banner */
+.herodiv {margin: 10px auto; position: relative;}
+
+.herodiv img {
+  width: 400px;
+  border: 3px solid white;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.stats {
+	position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -12%;
+  right: 2%;
+	background: radial-gradient(#eee, #666699);
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #333;
+	opacity: .9;
+}
+
+.stats h2, p {
+  font-size: small;
+}
+/* End Banner */
 
 /* Menu */
 
@@ -147,5 +201,15 @@ main section {
 }
 
 main section h2, p {
+  text-align: center;
+}
+.announcement {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px;
+  background-color: tomato;
+  display: none;
+  color: white;
+  height: auto;
   text-align: center;
 }

@@ -1,0 +1,78 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1em;
+		justify-content: center;
+    justify-items: center;
+	}
+
+    main section{
+        width: 400px;
+    }
+
+	/* Menu	*/
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+    /* End Menu	*/
+
+	.info {
+	  margin: 0 auto;
+	  display: flex;
+	  padding: 10px;
+	  justify-content: left;
+	}
+	.info .text{
+		margin-top: 10%;
+		padding-left: 50px;
+	}
+	.social{
+	  margin: 0 auto;
+		padding: 10px;
+	}
+	.info p{
+	  text-align: left;
+	  font-size: medium;
+	}
+	.map{
+		display: block;
+		width: 250px;
+		height: 262;
+	  border: 3px solid #666699;
+	  box-shadow: 5px 5px 5px #999;
+	}
+
+		/* Banner */
+		.herodiv {margin: 10px auto; position: relative;}
+
+		.herodiv img {
+		  width: 500px;
+		}
+
+		.stats {
+			position: absolute;
+			width: 100px;
+		  height: 100px;
+		  top: 0;
+		  right: 10%;
+			background: radial-gradient(#eee, #666699);
+			border: 1px solid #000;
+			padding: 1.5rem;
+			box-shadow: 0 0 30px #333;
+			opacity: .9;
+		}
+		/* End Banner */
+}
