@@ -19,7 +19,7 @@ function functionDisplayDate() {
 }
 
 function displayAnnoucement(){
-  if (dayName === "Tuesday"){
+  if (dayName === "Friday"){
     const announcement = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
     document.querySelector('.announcement').style.display = 'block';
     document.querySelector('.announcement').innerHTML = announcement;
