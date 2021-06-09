@@ -215,7 +215,7 @@ main section .images picture img{
   width: 300px;
   margin: 0.5rem auto;
 	border: 1px solid #bbb;
-	padding: 0px 0px auto 0px;
+	padding: 0px 0px 1px 0px;
 	background-color: #eee;
   border-radius: 5px;
 }
