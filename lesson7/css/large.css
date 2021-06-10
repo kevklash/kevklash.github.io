@@ -76,31 +76,31 @@
 	.pic{
 	  width: 300px;
 	}
-	.imgCard:nnth-child(1){
+	.imgCard:nth-child(1){
 		grid-column: 1;
 	}
-	.imgCard:nnth-child(2){
-		grid-column: 3;
-	}
-	.imgCard:nnth-child(3){
-		grid-column: 3;
-	}
-	.imgCard:nnth-child(4){
-		grid-column: 1;
-	}
-	.imgCard:nnth-child(5){
+	.imgCard:nth-child(2){
 		grid-column: 2;
 	}
-	.imgCard:nnth-child(6){
+	.imgCard:nth-child(3){
 		grid-column: 3;
 	}
-	.imgCard:nnth-child(7){
+	.imgCard:nth-child(4){
 		grid-column: 1;
 	}
-	.imgCard:nnth-child(8){
+	.imgCard:nth-child(5){
 		grid-column: 2;
 	}
-	.imgCard:nnth-child(9){
+	.imgCard:nth-child(6){
+		grid-column: 3;
+	}
+	.imgCard:nth-child(7){
+		grid-column: 1;
+	}
+	.imgCard:nth-child(8){
+		grid-column: 2;
+	}
+	.imgCard:nth-child(9){
 		grid-column: 3;
 	}
 	.imgCard .caption p{
