@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dae2f8, #d6a4a4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dae2f8, #d6a4a4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+table, th, td {
+    border: 1px solid #C2C2C2;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    width: 5rem;
+    padding: 0.5rem 5px 0.5rem 5px;
+    text-align: center;
+}
+
+tbody :nth-child(2) {
+    width: 3rem;
+}
+
+thead .theader {
+    background-color: #7fb9c2;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+tfoot .tfooter {
+    background-color: #7fb9c2;
+    font-size: smaller;
+}
+
+tbody {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(2){
+    background-color: #e7f0ed;
+}
+tr:nth-child(4){
+    background-color: #e7f0ed;
+}
+tr:nth-child(6){
+    background-color: #e7f0ed;
+}
+
+
+.headers {
+    background-color: #628ca6;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(6) td:nth-child(1) {
+    font-style: italic;
+}
+
+tbody tr:nth-child(5) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+
+table {
+    margin: 2rem auto;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 0 30px #333;
+}
