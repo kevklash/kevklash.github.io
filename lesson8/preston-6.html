@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment portal for Kevin Romero in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Kevin Romero | WDD 230 | Preston Town Weather Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+      <div class="announcement"></div>
+        <header>
+            <picture>
+		        <img src="images/logo.png" alt="Sandy Sun Logo">
+	        </picture>
+            <section class="headings">
+                <h1>Sandy Sun</h1>
+                <div class="m"><p>Rain before seven, clear before eleven</p></div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+            <li><a class="ham" href="#"><img src="images/lista.png" width="16" alt="Hamburger Menu Icon"/> Menu</a></li>
+            <li><a class="menuLink" href="#">Home</a></li>
+            <li><a class="menuLink-active" href="#"><u>Preston</u></a></li>
+            <li><a class="menuLink" href="#">Soda Springs</a></li>
+            <li><a class="menuLink" href="#">Fish Haven</a></li>
+            <li><a class="menuLink" href="stormcenter.html">Storm Center</a></li>
+            <li><a class="menuLink" href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+          <h1>Preston Idaho</h1>
+          <div class="herodiv">
+            <picture>
+              <source media="(min-width: 60em)" srcset="images/large.png">
+              <source media="(min-width: 37.5em)" srcset="images/medium.png">
+              <img src="images/small.png" class="banner-img" alt="Preston Idaho">
+            </picture>
+            <section class="stats" id="stats">
+             <h2><span>Weather Summary</span></h2>
+             <p><span>Wind Chill: <span class="chill"></span></span></p>
+             <p><span>Wind: <span class="wind">10</span>mph</span></p>
+             <p><span>High: <span class="temp">84</span>&deg; F</span></p>
+            </section>
+           </div>
+            <section>
+                <hr />
+                <h2>
+                    5 day weather forecast
+                </h2>
+                <div class="card">
+
+                  <h2 class="hd2">Preston</h2>
+                  <h3 class="hd3">Cloudy /<span> Wind 10mph <span class="dot">•</span> Precip 0%</span></h3>
+                  <h1 class="hd1">84&deg; F</h1>
+                  <div class="sky">
+                      <div class="sun"></div>
+                      <div class="cloud">
+                          <div class="circle-small"></div>
+                          <div class="circle-tall"></div>
+                          <div class="circle-medium"></div>
+                      </div>
+                  </div>
+                  <table>
+                      <tr>
+                          <td>TUE</td>
+                          <td>WED</td>
+                          <td>THU</td>
+                          <td>FRI</td>
+                          <td>SAT</td>
+                      </tr>
+                      <tr>
+                          <td>30°</td>
+                          <td>34°</td>
+                          <td>36°</td>
+                          <td>34°</td>
+                          <td>37°</td>
+                      </tr>
+                      <tr>
+                          <td>17°</td>
+                          <td>22°</td>
+                          <td>19°</td>
+                          <td>23°</td>
+                          <td>19°</td>
+                      </tr>
+                  </table>
+              </div>
+                <hr />
+              <h2>Benefits of Hiking</h2>
+              <p>
+                The warm sunshine on your face, the sound of the wind rushing through the trees overhead, and the soft earthy feel of the trail under your boots. Not only are these experiences enjoyable to have, but they’re good for you, too.
+              </p>
+              <p>
+                Hiking is proven to have many health benefits, ranging from physical exercise you get when out on the trail, to emotional or mental relief that comes from being in nature.
+              </P>
+              <hr />
+            </section>
+            <div class="info">
+              <img src="images/map.jpg" alt="Preston Map" class="map">
+              <div class="text">
+              <p><i class="fa fa-map-marker"></i><strong> Preston Idaho</strong></p>
+              <p><i class="fa fa-phone"></i><strong> (800) 800-8000</strong></p>
+              <p><i class="fa fa-envelope"></i><strong> contact@sandysun.com</strong></p>
+              <div class="social">
+                <a href="" target="bllank"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="" target="bllank"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="" target="bllank"><img src="images/pinterest.png" alt="pinterest"></a>
+              </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <h4>&copy;<span class="year"></span> | Kevin Romero | San Salvador City | <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a></h4>
+            <h5><span class="date">date</span></h5>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {
+              families: [
+                 'Koho',
+                 'Abel'
+              ]
+            }
+          });
+        </script>
+    </body>
+</html>
