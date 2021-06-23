@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment portal for Kevin Romero in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Kevin Romero | WDD 230 | Stomr Center Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+      <div class="announcement"></div>
+        <header>
+          <picture>
+		        <img src="images/logo.png" alt="Sandy Sun Logo">
+	        </picture>
+            <section class="headings">
+                <h1>Sandy Sun</h1>
+                <div class="m"><p>Rain before seven, clear before eleven</p></div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+            <li><a class="ham" href="#"><img src="images/lista.png" width="16" alt="Hamburger Menu Icon"/> Menu</a></li>
+            <li><a class="menuLink" href="#">Home</a></li>
+            <li><a class="menuLink" href="preston-6.html">Preston</a></li>
+            <li><a class="menuLink" href="#">Soda Springs</a></li>
+            <li><a class="menuLink" href="#">Fish Haven</a></li>
+            <li><a class="menuLink-active" href="#"><u>Storm Center</u></a></li>
+            <li><a class="menuLink" href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="form-sandy-content">
+              <div class="form-left">
+                <h2>Report a storm</h2>
+                <div class="text-1">The purpose of this page is for the users to report a storm or unusual weather event in their travel area.</div>
+                <div class="text-2"><span>Hint:</span> Try filling out the form and click the "Send" to submit your provided information, the form actually does something.</div>
+                <picture>
+      		        <img src="images/logo.png" alt="Sandy Sun Logo">
+      	        </picture>
+                <div class="form-left-last">
+                  <input type="submit" name="account" class="account" value="Create An Account">
+                </div>
+              </div>
+              <form class="form-detail" action="thankyou.html">
+                <h2>Fill out the form</h2>
+                <div class="form-row">
+                  <label for="full_name">Full Name</label>
+                  <input type="text" name="full_name" id="full_name" class="input-text" required pattern="(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})">
+                </div>
+                <div class="form-row">
+                  <label for="your_email">Your email</label>
+                  <input type="email" placeholder="Format: user@maildomain.com" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                </div>
+                <div class="form-row">
+                  <label for="phone">Phone #</label>
+                  <input type="tel" placeholder="Format: 123-456-7890" name="phone" id="phone" class="input-text" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <div class="form-row">
+                  <label for="zip_code">Zip code</label>
+                  <input type="number" name="zip_code" id="zip_code" class="input-text" required>
+                </div>
+                <div class="form-row">
+                  <label for="storm_date">Storm date</label>
+                  <input type="date" name="storm_date" id="storm_date" class="input-text" required>
+                </div>
+                <div class="form-row">
+                  <label for="type">Storm type</label>
+                  <input list="storm_type" name="type" id="type" class="input-text" required>
+                  <datalist id="storm_type">
+              			<option value="Flash Flood">
+              			<option value="Hail">
+              			<option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+              		</datalist>
+                </div>
+                <div class="form-row">
+                  <label for="severity">Storm severity: <span id="ratingvalue">5</span></label>
+                  <input type="range" name="severity" id="severity" class="input-text" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                  <datalist id="tickmarks">
+              			<option value="0">
+              			<option value="1">
+              			<option value="2">
+              			<option value="3">
+              			<option value="4">
+              			<option value="5">
+              			<option value="6">
+              			<option value="7">
+              			<option value="8">
+              			<option value="9">
+              			<option value="10">
+              		</datalist>
+                </div>
+                <div class="form-row">
+                  <label for="storm_region">Storm region</label>
+                  <select name="storm_region" id="storm_region"  required>
+                    <option value="" disabled selected>Select Region ...</option>
+            				<option value="Preston">Preston</option>
+            				<option value="Soda Springs">Soda Springs</option>
+            				<option value="Fish Haven">Fish Haven</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <fieldset>
+                    <legend>User in-danger level <em>(Choose one)</em></legend>
+                    <label for="yes">Yes</label><input type="radio" id="yes" name="danger" value="Yes" checked>
+                    <label for="maybe">Maybe</label><input type="radio" id="maybe" name="danger" value="Maybe">
+                    <label for="no">No</label><input type="radio" id="no" name="danger" value="No">
+                  </fieldset>
+                </div>
+                <div class="form-row">
+                  <label for="comments">Comments(Optional)</label>
+                  <textarea name="comments" id="comments" class="input-text" rows="8" cols="80"></textarea>
+                </div>
+                <div class="form-checkbox">
+                </div>
+                <div class="form-row-last">
+                  <button type="submit" class="register">Send</button>
+                </div>
+              </form>
+            </div>
+        </main>
+        <footer>
+            <h4>&copy;<span class="year"></span> | Kevin Romero | San Salvador City | <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a></h4>
+            <h5><span class="date">date</span></h5>
+        </footer>
+        <script src="js/footer.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/form.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {
+              families: [
+                 'Koho',
+                 'Abel'
+              ]
+            }
+          });
+        </script>
+    </body>
+</html>
