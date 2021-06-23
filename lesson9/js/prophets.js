@@ -18,21 +18,14 @@ fetch(prophetsApi)
 
 
             h2.textContent = `${prophet.name} ${prophet.lastname}`;
-            dateOfBirth.textContent = `Birth: ${prophet.dateOfBirth}`;
-            placeOfBirth.textContent = `Place of Birth: ${prophet.placeOfBirth}`;
-
+            dateOfBirth.textContent = `Birth: ${prophet.birthdate}`;
+            placeOfBirth.textContent = `Place of Birth: ${prophet.birthplace}`;
 
             prophet_card.appendChild(h2);
             prophet_card.appendChild(dateOfBirth);
             prophet_card.appendChild(placeOfBirth);
-
-            if (prophet.death != null) {
-                dateOfDeath.textContent = `Death: ${prophet.death}`;
-                prophet_card.appendChild(dateOfDeath);
-            }else {
-                dateOfDeath.textContent = `Living Prophet`;
-                prophet_card.appendChild(dateOfDeath);
-            };
+            prophet.death != null ? dateOfDeath.textContent = `Death: ${prophet.death}` : dateOfDeath.textContent = `Living Prophet`;
+            prophet_card.appendChild(dateOfDeath);
 
             prophet_card.appendChild(picture);
 
