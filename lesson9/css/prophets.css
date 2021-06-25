@@ -121,7 +121,6 @@ main .cards section p{
 }
 main .cards section:hover{
   box-shadow: 0 0 30px #333;
-  border: 0;
   padding-bottom: 2px;
 }
 
