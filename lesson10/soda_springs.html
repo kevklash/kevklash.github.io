@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment portal for Kevin Romero in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Kevin Romero | WDD 230 | Soda Springs Weather Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+      <div class="announcement"></div>
+        <header>
+            <picture>
+		        <img src="images/logo.png" alt="Sandy Sun Logo">
+	        </picture>
+            <section class="headings">
+                <h1>Sandy Sun</h1>
+                <div class="m"><p>Rain before seven, clear before eleven</p></div>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+            <li><a class="ham" href="#"><img src="images/lista.png" width="16" alt="Hamburger Menu Icon"/> Menu</a></li>
+            <li><a class="menuLink" href="index.html">Home</a></li>
+            <li><a class="menuLink" href="preston-10.html">Preston</a></li>
+            <li><a class="menuLink-active" href="#"><u>Soda Springs</u></a></li>
+            <li><a class="menuLink" href="fish_haven.html">Fish Haven</a></li>
+            <li><a class="menuLink" href="stormcenter.html">Storm Center</a></li>
+            <li><a class="menuLink" href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+          <h1>Soda Springs</h1>
+          <div class="herodiv">
+            <picture>
+              <source media="(min-width: 60em)" srcset="images/soda_large.png">
+              <source media="(min-width: 37.5em)" srcset="images/soda_medium.png">
+              <img src="images/soda_small.png" class="banner-img" alt="Soda Springs Idaho">
+            </picture>
+            <section class="stats" id="stats">
+             <h2><span>Weather Summary</span></h2>
+             <p><span>Wind Chill: <span class="chill"></span></span></p>
+             <p><span>Wind: <span class="wind"></span>mph</span></p>
+             <p><span>High: <span class="temp"></span>&deg; F</span></p>
+            </section>
+           </div>
+            <section>
+                <hr />
+                <h2>
+                    5 day weather forecast
+                </h2>
+                <div class="card">
+
+                  <h2 class="hd2">Soda Springs</h2>
+                  <h3 class="hd3"><span id="condition"></span> / <span id="speed"></span> / <span class="dot">•</span> <span id="humidity"></span></h3>
+                  <h1 class="hd1"></h1>
+                  <div class="sky">
+                  </div>
+                  <table id="card_days">
+                      <tr id="icons">
+                      </tr>
+                      <tr id="days">
+                        <td>TUE</td>
+                        <td>WED</td>
+                        <td>THU</td>
+                        <td>FRI</td>
+                        <td>SAT</td>
+                      </tr>
+                      <tr id="temp_max">
+                      </tr>
+                      <tr id="temp_min">
+                      </tr>
+                  </table>
+              </div>
+                <hr />
+              <h2>Geyser Park</h2>
+              <p>
+                The City of Soda Springs has the geyser set on a timer to go off every hour on the hour. You can see the Geyser today blow 70 feet into the air and hear it roar "Like a mad dragon," as described by one of the developers in 1937.
+              </p>
+              <p>
+                The Geyser is open to the public year round, no fees. If you are visiting and find that it is not go off  at the scheduled time, please call City Hall at 208-547-2600.
+              </p>
+              <hr />
+              <h2>Upcoming events</h2>
+              <div class="events">
+              </div>
+              <hr />
+            </section>
+            <div class="info">
+              <img src="images/map_soda.jpg" alt="Soda Springs Map" class="map">
+              <div class="text">
+              <p><i class="fa fa-map-marker"></i><strong> Soda Springs Idaho</strong></p>
+              <p><i class="fa fa-phone"></i><strong> (800) 800-8000</strong></p>
+              <p><i class="fa fa-envelope"></i><strong> contact@sandysun.com</strong></p>
+              <div class="social">
+                <a href="" target="bllank"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="" target="bllank"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="" target="bllank"><img src="images/pinterest.png" alt="pinterest"></a>
+              </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <h4>&copy;<span class="year"></span> | Kevin Romero | San Salvador City | <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a></h4>
+            <h5><span class="date">date</span></h5>
+        </footer>
+        <script src="js/script_footer_chill.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/soda_weather.js"></script>
+        <script src="js/soda_events.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {
+              families: [
+                 'Koho',
+                 'Abel'
+              ]
+            }
+          });
+        </script>
+    </body>
+</html>
