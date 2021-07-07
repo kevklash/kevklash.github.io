@@ -1,4 +1,4 @@
-const fishWeather = 'http://api.openweathermap.org/data/2.5/forecast?id=5585000&appid=0bf4a143e3ef3987951505e31155ec40&units=imperial';
+const fishWeather = 'https://api.openweathermap.org/data/2.5/forecast?id=5585000&appid=0bf4a143e3ef3987951505e31155ec40&units=imperial';
 
 function getWeather(urlAPI){
 

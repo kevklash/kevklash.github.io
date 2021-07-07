@@ -1,6 +1,4 @@
-const prestonWeather = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0bf4a143e3ef3987951505e31155ec40&units=imperial';
-const sodaWeather = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0bf4a143e3ef3987951505e31155ec40&units=imperial';
-const fishWeather = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0bf4a143e3ef3987951505e31155ec40&units=imperial';
+const prestonWeather = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0bf4a143e3ef3987951505e31155ec40&units=imperial';
 
 function getWeather(urlAPI){
 
