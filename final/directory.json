@@ -1,0 +1,58 @@
+{
+  "businesses": [
+    {
+      "name": "Tropico Inn Hotel",
+      "industry" : "Hotels, tourism",
+      "services" : "Events, vacation packages, conferences",
+      "logo" : "tropico.png"
+    },
+    {
+      "name": "Comfort Inn Hotel",
+      "industry" : "Hotels, tourism",
+      "services" : "Events, vacation packages, conferences",
+      "logo" : "comfort.png"
+    },
+    {
+      "name": "Cosavi",
+      "industry" : "Finances",
+      "services" : "Credits, finances, project management",
+      "logo" : "cosavi.png"
+    },
+    {
+      "name": "Campestre Chicken",
+      "industry" : "Restaurants, foods",
+      "services" : "Events, restaurant",
+      "logo" : "campestre.png"
+    },
+    {
+      "name": "La Tartaleta",
+      "industry" : "Restaurants, foods",
+      "services" : "Events, restaurant",
+      "logo" : "tartaleta.jpg"
+    },
+    {
+      "name": "Pasteleria Lorena",
+      "industry" : "Restaurants, foods",
+      "services" : "Events, restaurant",
+      "logo" : "lorena.png"
+    },
+    {
+      "name": "Pasteleria Francesa",
+      "industry" : "Restaurants, foods",
+      "services" : "Events, restaurant",
+      "logo" : "francesa.png"
+    },
+    {
+      "name": "Universidad de Oriente(UNIVO)",
+      "industry" : "University, Non-profit",
+      "services" : "Education",
+      "logo" : "univo.jpg"
+    },
+    {
+      "name": "Universidad Gerardo Barrios(UGB)",
+      "industry" : "University, Non-profit",
+      "services" : "Education",
+      "logo" : "ugb.png"
+    }
+  ]
+}

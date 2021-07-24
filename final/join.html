@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment portal for Kevin Romero in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>San Miguel City | Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon_k.ico">
+    </head>
+    <body>
+      <div class="announcement"></div>
+        <header>
+          <picture>
+            <img src="img/logo.jpg" alt="San Miguel City Logo">
+          </picture>
+        </header>
+        <nav>
+            <ul class="navigation">
+            <li><a class="ham" href="#"><img src="img/lista.png" width="16" alt="Hamburger Menu Icon"/> Menu</a></li>
+            <li><a class="menuLink" href="index.html">Home</a></li>
+            <li><a class="menuLink" href="city.html">City</a></li>
+            <li><a class="menuLink-active" href="#"><u>Join</u></a></li>
+            <li><a class="menuLink" href="directory.html">Directory</a></li>
+            <li><a class="menuLink" href="contact.html">Contact</a></li>
+            <li><a class="menuLink" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+          <div class="form-sandy-content">
+            <div class="form-left">
+              <h2>Join the Chamber of Commerce</h2>
+              <div class="text-1">Fill out the form to start the application to join the chamber of commerce.</div>
+              <div class="text-2"><span>Perks:</span> Depending on the membership level you select, you will enjoy some perks like the following:<br><br>
+                <strong>Non-profits($100):</strong> directory listings, social media posts, luncheon ticket.<br>
+                <strong>Bronze($200):</strong> directory listings, social media posts, luncheon tickets.<br>
+                <strong>Silver($400):</strong> directory listings, social media posts, luncheon tickets, sponsorships with levels of advertising, etc.<br>
+                <strong>Gold($1000):</strong> All of the above plus business trainings.<br>
+              </div>
+              <div class="form-left-last">
+                <input type="submit" name="account" class="account" value="Create An Account">
+              </div>
+            </div>
+            <form class="form-detail" action="thankyou.html">
+              <h2>Fill out the form</h2>
+              <div class="form-row">
+                <label for="full_name">Full Name*</label>
+                <input type="text" name="full_name" id="full_name" class="input-text" required pattern="(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})">
+              </div>
+              <div class="form-row">
+                <label for="full_name">Title*</label>
+                <input type="text" name="title" id="title" class="input-text" required>
+              </div>
+              <div class="form-row">
+                <label for="your_email">Your email*</label>
+                <input type="email" placeholder="Format: user@maildomain.com" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone #*</label>
+                <input type="tel" placeholder="Format: 123-456-7890" name="phone" id="phone" class="input-text" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              </div>
+              <div class="form-row">
+                <label for="full_name">Business Name*</label>
+                <input type="text" name="business" id="business" class="input-text" required>
+              </div>
+              <div class="form-row">
+                <label for="full_name">Business Address*</label>
+                <input type="text" name="address" id="address" class="input-text" required>
+              </div>
+              <div class="form-row">
+                <label for="full_name">Website*</label>
+                <input type="text" name="website" id="website" class="input-text" required>
+              </div>
+              <div class="form-row">
+                <label for="type">Membership Level*</label>
+                <input list="mlevel" name="level" id="level" class="input-text" required>
+                <datalist id="mlevel">
+                  <option value="Non-profit($100)">
+                  <option value="Bronze($200)">
+                  <option value="Silver($400)">
+                  <option value="Gold($1000)">
+                </datalist>
+              </div>
+              <div class="form-row">
+                <label for="description">Business Description</label>
+                <textarea name="description" id="description" class="input-text" rows="8" cols="80"></textarea>
+                <label>*Required</label>
+              </div>
+              <div class="form-checkbox">
+              </div>
+              <div class="form-row-last">
+                <button type="submit" class="register">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="separator-bar"></div>
+        </main>
+        <footer>
+          <img src="img/escudo.png" alt="San Miguel City Escutcheon" class="heraldry">
+          <div class="text">
+          <p><i class="fa fa-users"></i><strong> San Miguel Chamber of Commerce</strong></p>
+          <p><i class="fa fa-map-marker"></i><strong> San Miguel City, El Salvador</strong></p>
+          <p><i class="fa fa-phone"></i><strong> +503 2660-8000</strong></p>
+          <p><i class="fa fa-envelope"></i><strong> contact@smcommerce.com</strong></p>
+          <p><i class="fa fa-id-card-o"></i><strong> Escutcheon credits to <a href="https://www.facebook.com/f.alcaldiasm/photos/3886618374727468" target="bllank">San Miguel Town Hall</a></strong></p>
+          <div class="social">
+            <a href="" target="bllank"><img src="img/instagram.png" alt="instagram"></a>
+            <a href="" target="bllank"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="" target="bllank"><img src="img/pinterest.png" alt="pinterest"></a>
+          </div>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {
+              families: [
+                 'Koho',
+                 'Abel'
+              ]
+            }
+          });
+        </script>
+    </body>
+</html>

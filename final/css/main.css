@@ -1,0 +1,228 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=KoHo:wght@300&display=swap');
+body{
+  padding-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: #fffff;  /* DAD7D6 */
+}
+h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 32px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #6B6766;
+    font-family: 'Abel', sans-serif;
+  }
+  a {
+    color: tomato;
+    font-family: 'KoHo', sans-serif;
+  }
+  a:visited {
+    color: #A8381C;
+    font-family: 'KoHo', sans-serif;
+  }
+  li {
+    color: #666464;
+    font-family: 'KoHo', sans-serif;
+  }
+  p {
+    padding-left: 10px;
+    font-family: 'KoHo', sans-serif;
+    font-size: 14px;
+    color: #555150;
+  }
+  hr{
+    color: #6B6766;
+  }
+
+  header{
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #ffffff;
+  }
+  header, footer{
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+
+  }
+  footer {
+    max-width: 1000px;
+    display: block;
+    padding: 10px;
+  }
+  footer .text{
+    margin-top: 10%;
+  }
+  footer p{
+    text-align: center;
+    font-size: medium;
+  }
+  footer .social{
+    margin: 0 auto;
+    display: block;
+    padding-left: 35px;
+  }
+  footer .social img{
+    width: 32px;
+    margin: 3px;
+    margin-bottom: 50px;
+  }
+  footer .heraldry{
+    width: 250px;
+    border: 3px solid #6B6766;
+    box-shadow: 5px 5px 5px #999;
+  }
+
+    header img {
+    width: 250px;
+  }
+
+  .headings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+  }
+
+  .m {
+    letter-spacing: 1pt;
+    margin-left: 20px;
+    font-size: .9rem;
+  }
+
+/* phone or baseline views **************************/
+main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+	font-size: 0.8rem;
+	border-radius: 5px;
+}
+
+/* Menu */
+
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+nav ul{
+  background: black;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+.navigation .menuLink-active{
+  font-style: italic;
+  color: tomato;
+}
+.navigation a:hover {
+	color: white;
+	background-color: tomato;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* End Menu */
+
+/* Separator and images */
+.separator-bar{
+  width: 100%;
+  height: 10px;
+  background: #000;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+main section .images picture img{
+  margin: 0 auto;
+  width: 300px;
+}
+/* End Separator and images */
+
+/* Gallery */
+.gallery .imgCard{
+  width: 300px;
+  margin: 0.5rem auto;
+	border: 1px solid #bbb;
+	padding: 0px 0px 1px 0px;
+	background-color: #eee;
+  border-radius: 5px;
+}
+.pic{
+  width: 300px;
+}
+.imgCard .caption p{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.imgCard:hover{
+  box-shadow: 0 0 30px #333;
+  border: 0;
+  padding-bottom: 2px;
+}
+/* End Gallery */
+
+main h1 {
+	padding: 0 1rem;
+}
+
+main section {
+	margin: 0.5rem;
+	padding: 0 1rem;
+  border-radius: 5px;
+}
+
+main p{
+  padding: 0 1rem;
+}
+
+main section h2, p {
+  text-align: center;
+}
+.announcement {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: tomato;
+  display: none;
+  color: white;
+  height: auto;
+  text-align: center;
+}
