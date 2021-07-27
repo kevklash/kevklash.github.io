@@ -1,0 +1,250 @@
+main h2{
+  padding: 25px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .cards, main .cards_list{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  grid-gap: 1em;
+  justify-content: center;
+  justify-items: center;
+}
+main .cards section, main .cards_list section{
+  margin: 0 auto;
+  margin-bottom: 15px;
+  align-items: center;
+  width: 260px;
+	border: 1px solid #bbb;
+	background-color: #eee;
+  border-radius: 5px;
+}
+main .cards section h2, main .cards_list section h2{
+  text-align: center;
+}
+main .cards section img, main .cards_list section img{
+  width: 230px;
+  margin: 15px 15px 10px;
+  border-radius: 5px;
+}
+main .cards section p, main .cards_list section p{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+main .cards section:hover, main .cards_list section:hover{
+  box-shadow: 0 0 30px #333;
+  padding-bottom: 2px;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Hide buttons */
+.toggle{
+  display: none;
+}
+
+@media only screen and (min-width: 37.5em){
+  main {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		justify-content: center;
+    justify-items: center;
+	}
+
+  /* list*/
+  main .cards_list{
+		display: inline-block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		justify-content: center;
+		justify-items: center;
+	}
+	main .cards_list section{
+    display: grid;
+    margin: 0 auto;
+    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+	  width: 80%;
+		border: 1px solid #bbb;
+		background-color: #eee;
+	  border-radius: 5px;
+    justify-content: center;
+		justify-items: center;
+	}
+  main .cards_list section img{
+    grid-column: 1;
+    grid-row: 1;
+    width: 120px;
+    margin: 15px 15px 10px;
+    border-radius: 5px;
+  }
+  main .cards_list section .text{
+    grid-column: 2;
+    grid-row: ;
+  }
+
+  /* grid */
+  main .cards{
+  	display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  	grid-template-columns: repeat(2, 1fr);
+  	grid-gap: 1em;
+  	justify-content: center;
+  	justify-items: center;
+  }
+  main .cards section{
+    align-items: center;
+    width: 260px;
+  	border: 1px solid #bbb;
+  	background-color: #eee;
+    border-radius: 5px;
+  }
+  main .cards section img{
+    width: 230px;
+    margin: 15px 15px 10px;
+    border-radius: 5px;
+  }
+  main .cards section:nth-child(1){
+		grid-column: 1;
+	}
+	main .cards section:nth-child(2){
+		grid-column: 2;
+	}
+	main .cards section:nth-child(3){
+		grid-column: 1;
+	}
+  main .cards section:nth-child(4){
+		grid-column: 2;
+	}
+	main .cards section:nth-child(5){
+		grid-column: 1;
+	}
+	main .cards section:nth-child(6){
+		grid-column: 2;
+	}
+  main .cards section:nth-child(7){
+		grid-column: 1;
+	}
+	main .cards section:nth-child(8){
+		grid-column: 2;
+	}
+	main .cards section:nth-child(9){
+		grid-column: 1;
+	}
+
+  .toggle{
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  main {
+    margin: 0 auto;
+		margin-bottom: 1rem;
+    justify-content: center;
+    justify-items: center;
+	}
+
+  /* list */
+
+  main .cards_list{
+		display: inline-block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		justify-content: center;
+		justify-items: center;
+	}
+	main .cards_list section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	  width: 100%;
+		border: 1px solid #bbb;
+		background-color: #eee;
+	  border-radius: 5px;
+    justify-content: center;
+		justify-items: center;
+	}
+  main .cards_list section img{
+    grid-column: 1;
+    grid-row: 1;
+    width: 120px;
+    margin: 15px 15px 10px;
+    border-radius: 5px;
+  }
+  main .cards_list section .text{
+    grid-column: 2;
+    grid-row: ;
+  }
+
+  /* grid */
+
+  main .cards{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		grid-gap: 1em;
+		justify-content: center;
+		justify-items: center;
+	}
+	main .cards section{
+	  width: 290px;
+		border: 1px solid #bbb;
+		background-color: #eee;
+	  border-radius: 5px;
+    justify-content: center;
+		justify-items: center;
+	}
+  main .cards section img{
+    width: 260px;
+    margin: 15px 15px 10px;
+    border-radius: 5px;
+  }
+	main .cards section:nth-child(1){
+		grid-column: 1;
+	}
+	main .cards section:nth-child(2){
+		grid-column: 2;
+	}
+	main .cards section:nth-child(3){
+		grid-column: 3;
+	}
+  main .cards section:nth-child(4){
+		grid-column: 1;
+	}
+	main .cards section:nth-child(5){
+		grid-column: 2;
+	}
+	main .cards section:nth-child(6){
+		grid-column: 3;
+	}
+  main .cards section:nth-child(7){
+		grid-column: 1;
+	}
+	main .cards section:nth-child(8){
+		grid-column: 2;
+	}
+	main .cards section:nth-child(9){
+		grid-column: 3;
+	}
+}
